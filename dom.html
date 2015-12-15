@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+
+
+
+</head>
+<body>
+
+<h1 id="title">Ciao!</h1>
+
+<p id="demo" class="red"></p>
+
+<img>
+
+
+
+<script>
+
+console.log(document.getElementById("demo").innerHTML)
+document.getElementById("demo").innerHTML = "Hello World!";
+console.log(document.getElementById("demo").innerHTML)
+document.getElementById("title").innerHTML = document.getElementById("demo").innerHTML;
+document.getElementsByClassName("red")[0].innerHTML = "Aggiunto da una classe";
+document.getElementsByTagName("img")[0].setAttribute("src","http://ilsaggiolibro.it/wp-content/uploads/2013/12/001.jpg")
+document.getElementsByTagName("img")[0].style.height = "100px"
+document.getElementsByTagName("img")[0].style.display = "none"
+
+</script>
+</body>
+</html>
